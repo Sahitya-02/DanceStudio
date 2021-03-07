@@ -1,0 +1,34 @@
+<form id="c-register" class="input-group" >    
+                        <label><b>NAME</b></label>   
+                        <input type="text" id="name" placeholder="Enter your name" value="" onchange="validatename()">       
+                        <label><b>PASSWORD</b></label>    
+                        <input type="password"  id="password" placeholder="****" value="" onchange="validatepw()">    
+                         
+                        <label><b>E-MAIL</b></label>    
+                        <input type="email" id="email" placeholder="name@domain.com" value="" onchange="validatemail()">    
+                        
+                        <label><b>MOBILE NUMBER</b></label>    
+                        <input type="text" id="mnum" placeholder="0000000000" onchange="validatenum()">
+                        
+                        <label><b>GENDER:</b></label>
+                        <label class="radio-inline"><input type="radio" name="optradio" unchecked>Male</label>
+                        <label class="radio-inline"><input type="radio" name="optradio">Female</label>
+                        <br>
+                        <label><b>DATE OF BIRTH:</b></label>    
+                        <input type="date" id="date">
+                       
+                        <label><b>EXPERIENCE</b></label> 
+                        <input type="number" id="exp" placeholder="in years">
+                       
+                        <label><b>DANCE TYPES KNOWN:</b></label><br>    
+                        <input type="checkbox" id="lang" value="english">
+                        <label for="lang">Western</label><br>
+                        <input type="checkbox" id="lang" value="telugu">
+                        <label for="lang">Classical</label><br>
+                        <input type="checkbox" id="lang" value="Hindi">
+                        <label for="lang"> Folk</label><br>
+                        <input type="checkbox" id="lang" value="tamil">
+                        <label for="lang">Hip-Hop</label><br>
+                        <br>
+                        <button type="submit"  class="contact-submit" id="submit" onclick="validatename();validatepw();validatemail();validatenum()">SUBMIT</button>
+                    </form>
