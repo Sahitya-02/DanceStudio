@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet"<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Jost:ital@1&display=swap" rel="stylesheet">
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+           <h1 class="animate_animated animate_bounce"> K L DANCE STUDIO </h1></div>
+        <div class="menu">
+          <ul>
+            <li class="active">
+                <a href="#">Home</a>
+                </li>
+                <li>
+          <a href="ChoreogrpherForm.html">Choreographer</a>
+          </li>
+          <li>
+        <a href="">Customer</a>
+        </li>
+        </ul>
+        <div class="burger">
+          <div class="line1">  </div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+
+        </div>
+        </nav>
+        <main>
+          <section>
+            <h3> Welcome to K.L Dance Studio</h3>
+            <h1>LIFE is BETTER when you DANCE<span></span></h1>
+            <p>"Dance to the beat of your dreams"</p>
+            <a href="#" class="btnone">About us</a>
+          </section>
+        </main>
+
+    </header>
+  </body>
+</html>
+
+// CSS //
+
+*{
+  margin: 0; padding: 0;box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Jost', sans-serif;
+
+}
+header{
+  width: 100%; height:100vh;
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(https://wallpapercave.com/wp/JvCoA3p.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+}
+ul{
+  float:right;
+  list-style-type: none;
+  }
+  ul li{
+
+    display:inline-block;
+    }
+    ul li a{
+
+      text-decoration:none;
+      color: #fff;
+      padding:5px 20px;
+      border: 1px solid transparent;
+      transition:0.6s ease;
+    }
+    ul li a:hover{
+      background-color: #fff;
+      color:#000;
+    }
+
+  ul li.active a{
+    background-color: #fff;
+    color:#000;
+  }
+
+nav{
+  width: 100%; height: 15vh;
+  background: rgb(0, 0, 0, 0.5);
+  color:white;display: flex;justify-content: space-between;
+  align-items: center;text-transform:uppercase;
+}
+nav .logo{
+  width:25%;
+  text-align:right;
+  font-size: 20px;
+
+}
+
+nav.menu{
+  width: 40%;
+  display:flex;justify-content:space-around;
+}
+.nav-links{
+  display:flex;
+  justify-content: space-around;
+  width:30%;
+
+}
+.nav-links li{
+  list-style:
+}
+.nav-links a{
+  text-decoration: :none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 14px;
+
+}
+
+.burger div
+{ width: 25px;
+  height: 5px;
+  margin:5px;
+}
+nav.menu a
+{
+  width: 25%;
+  text-decoration:none; color:white;
+  font-weight: bold;
+  float:right;
+  padding: 33px 20px;
+}
+
+main{
+  width:100%;
+  height:85vh;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  color: white;
+  text-align: center;
+
+}
+section{
+
+}
+section h3{
+  font-size: 35px;font-weight: 200;letter-spacing: 3px;
+  text-shadow: 1px 1px 2px black;
+
+}
+section h1{
+  margin: 30px 0 20px 0;
+  font-size: 55px;
+  font-weight: 700;
+  text-shadow: 2px 1px 5px black;
+  text-transform: uppercase;
+}
+section p{
+  font-size: 25 px;
+  color: #eee;
+  word-spacing: 2px;
+  margin-bottom: 25px;
+  text-shadow: 1px 1px 1px black;
+}
+
+section a{
+  padding:12px 30px;
+  border-radius: 4px;
+  outline: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  letter-spacing: 1px;
+
+}
+
+section .btnone{
+  background: #fff;
+  color:#000;
+
+}
+.change_content:after{
+  content:'';
+  animation:changetext 10s ifinite linear;
+  color:#00b894;
+}
+@@keyframes changetext {
+  0%{content:"DANCE";}
+}
