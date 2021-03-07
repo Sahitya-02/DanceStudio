@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Jost', sans-serif;
+
+
+
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Jost', sans-serif;
+
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card{
+     width: 20%;
+     display: inline-block;
+     box-shadow: 2px 2px 20px black;
+     border-radius: 5px;
+     margin: 2%;
+    }
+
+.image img{
+  width: 100%;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+
+
+
+ }
+
+.title{
+
+  text-align: center;
+  padding: 10px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Jost', sans-serif;
+
+
+ }
+
+h1{
+  font-size: 20px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Jost', sans-serif;
+  font-size: 20px;
+
+ }
+
+.des{
+  padding: 3px;
+  text-align: center;
+
+  padding-top: 10px;
+        border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+button{
+  margin-top: 40px;
+  margin-bottom: 10px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding:10px;
+}
+button:hover{
+  background-color: black;
+  color: white;
+  transition: .5s;
+  cursor: pointer;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: black;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+  <div class="about-section">
+  <h1>RYTHM DANCE STUDIO</h1>
+  <p>"Dance is the hidden language of the soul......"</p>
+  <p><marquee behavior="scroll" direction="right">You can Book Your Slot Right now!!...</marquee>
+ </p>
+</div>
+
+<h2 style="text-align:center">WESTERN DANCE</h2>
+
+  <div class="main">
+
+   <!--cards -->
+
+  <div class="card">
+
+  <div class="image">
+     <img src="https://img.redbull.com/images/c_crop,x_1,y_0,h_2133,w_3199/c_fill,w_1500,h_1000/q_auto,f_auto/redbullcom/2019/10/11/8e9ca35b-f25c-426a-bb40-338feabff9cb/world-urban-games-2019-shigekix-chairfreeze">
+  </div>
+  <div class="title">
+   <h1>
+  BREAK DANCE </h1>
+  </div>
+  <div class="des">
+   <p>"Breaking, also called breakdancing or b-boying/b-girling, is an athletic style of street dance from the United States" </p>
+  <button>BOOK SLOT</button>
+  </div>
+  </div>
+  <!--cards -->
+
+
+  <div class="card">
+
+  <div class="image">
+     <img src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F795591ac-0e39-11eb-91e1-2b943ee95958.jpg?crop=2667%2C1500%2C0%2C0">
+  </div>
+  <div class="title">
+   <h1>
+  BALLET</h1>
+  </div>
+  <div class="des">
+   <p>"Ballet is a type of performance dance that originated during the Italian Renaissance in the fifteenth century and later developed into a concert dance form"</p>
+  <button>BOOK SLOT</button>
+  </div>
+  </div>
+  <!--cards -->
+
+
+  <div class="card">
+
+  <div class="image">
+     <img src="https://mediad.publicbroadcasting.net/p/wabe/files/styles/x_large/public/201709/TapDance_090617.jpg">
+  </div>
+  <div class="title">
+   <h1>
+  TAP DANCE</h1>
+  </div>
+  <div class="des">
+   <p>"Tap dance is a type of dance characterised by using the sounds of metal taps affixed to the heel and toe of shoes striking the floor."</p>
+  <button>BOOK SLOT</button>
+  </div>
+  </div>
+  <!--cards -->
+
+
+  <div class="card">
+
+  <div class="image">
+     <img src="https://publicrawartistsorg.s3.amazonaws.com/1460093002.492abffdda661b15d201f394bb172689.JPG">
+  </div>
+  <div class="title">
+   <h1>
+  Hip-Hop Dance</h1>
+  </div>
+  <div class="des">
+   <p>"Hip hop dance is a fusion dance genre that incorporates elements of popping, locking, jazz, ballet, and tap dancing."</p>
+  <button>BOOK SLOT</button>
+  </div>
+  </div>
+  <!--cards -->
+
+</div>
+</body>
+</html>
