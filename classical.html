@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Classical</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Jost', sans-serif;
+
+
+
+}
+
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Jost', sans-serif;
+
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card{
+     width: 20%;
+     display: inline-block;
+     box-shadow: 2px 2px 20px black;
+     border-radius: 5px;
+     margin: 2%;
+     
+    }
+
+.image img{
+  width: 100%;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+
+
+
+ }
+
+.title{
+
+  text-align: center;
+  padding: 10px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Jost', sans-serif;
+
+
+ }
+
+h1{
+  font-size: 20px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Jost', sans-serif;
+  font-size: 20px;
+
+ }
+
+.des{
+  padding: 3px;
+  text-align: center;
+
+  padding-top: 10px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+button{
+  margin-top: 40px;
+  margin-bottom: 10px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding:10px;
+}
+button:hover{
+  background-color: black;
+  color: white;
+  transition: .5s;
+  cursor: pointer;
+}
+.card:hover{
+	border:5px solid black;
+}
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: black;
+
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: black;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+.form-popup-bn{
+  display: none;
+  bottom: 0;
+  right: 15px;
+  z-index: 9;
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -730px; 
+  margin-top: -55px;
+}
+
+.form-popup-kp {
+  display: none;
+  bottom: 0;
+  right: 15px;
+  z-index: 9;
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -390px; 
+  margin-top: -55px;
+}
+.form-popup-kk{
+  display: none;
+  bottom: 0;
+  right: 15px;
+  z-index: 9;
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -30px; 
+  margin-top: -55px;
+}
+.form-popup-o{
+  display: none;
+  bottom: 0;
+  right: 15px;
+  z-index: 9;
+  position:absolute;
+  top: 50%;
+  right: 50%;
+  margin-right:-700px; 
+  margin-top: -55px;
+}
+
+
+/* Add styles to the form container */
+
+
+.form-container {
+	margin-bottom: 10px;
+	padding-bottom: 20px;
+	align-items:center;
+	margin:5px;
+	width:350px;
+	border: 5px solid black;
+	border-radius:10px;
+	background-color:white;
+	box-shadow: 2px 2px 20px black;
+}
+
+.form-container label {
+	display: block;
+	margin-bottom: 5px;
+	margin-left:22px;
+	
+}
+
+
+.form-container input {
+	border: 2px solid black;
+	border-radius: 4px;
+	display: block;
+	font-family: inherit;
+	font-size: 14px;
+	padding: 10px;
+	width: 80%;
+	margin-left:22px;
+	
+	
+	
+}
+.form-container select{
+	border: 2px solid black;
+	border-radius: 4px;
+	display: block;
+	font-family: inherit;
+	font-size: 14px;
+	
+	width:80%;
+	height:40px;
+	margin-left:22px;
+	
+}
+.form-container .btn {
+  background-color: green;
+   
+	border: 2px solid green;
+	border-radius: 4px;
+	color: #fff;
+	display: inline-block;
+	font-family: inherit;
+	font-size: 16px;
+	padding: 10px;
+	margin-top: 20px;
+	width: 40%;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+	border: 2px solid red;
+	border-radius: 4px;
+	color: #fff;
+	display: inline-block;
+	font-family: inherit;
+	font-size: 16px;
+	padding: 10px;
+	margin-top: 20px;
+	width: 40%;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover {
+  opacity: 1;
+   
+}
+.nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  overflow: hidden;
+  background:transparent;
+  position: fixed;
+   top: 0px;
+  align:left;
+ 
+}
+.nav{
+	overflow: hidden;
+    border: 1px solid black;
+    background-image: url(https://wallpapercave.com/wp/JvCoA3p.jpg);
+}
+
+
+.nav li {
+  float: left;
+    
+}
+
+.nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
+}
+
+.nav li a:hover:not(.active) {
+  background-color: #fff;
+  color:black;
+}
+
+.nav .active {
+  background-color: red;
+}
+
+</style>
+</head>
+<body>
+  <div class="nav">
+		<ul>
+		  <li><a href="learner.html">HOME</a></li>
+		  <li><a href="western.html" >WESTERN</a></li>
+		  <li><a href="classical.html" class="active">CLASSICAL</a></li>
+		  <li><a href="#">PROFILE</a></li>
+		  <li><a href="llogin.html">LOGOUT</a></li>
+		</ul>
+	</div>
+  <div class="about-section">
+  <h1>RYTHM DANCE STUDIO</h1>
+  <p>"Indian classical dance is sustained by a profound philosophy...."</p>
+  <p><marquee behavior="scroll" direction="right">You can Book Your Slot Right now!!...</marquee>
+ </p>
+</div>
+
+<h2 style="text-align:center">CLASSICAL DANCE</h2>
+
+  <div class="main">
+
+   <!--cards -->
+
+  <div class="card">
+
+  <div class="image">
+     <img src="https://www.karnatakatourism.org/wp-content/uploads/2020/05/Dane.jpg">
+  </div>
+  <div class="title">
+   <h1>
+  BHAARATANATYAM</h1>
+  </div>
+  <div class="des">
+   <p>"Bharatanatyam is the oldest classical dance tradition in India." </p>
+  <button class="open-button" onclick="openFormbn()">BOOK SLOT</button>
+  </div>
+  </div>
+  <!--cards -->
+
+
+  <div class="card">
+
+  <div class="image">
+     <img src="http://www.schoolchalao.com/img/studentcorners/school-chalao-kuchipudi-dance-andhra-pradesh.jpg">
+  </div>
+  <div class="title">
+   <h1>
+  KUCHIPUDI</h1>
+  </div>
+  <div class="des">
+   <p>"Kuchipudi is a dance-drama performance, with its roots in the ancient Hindu Sanskrit text of Natya Shastra."</p>
+  <button class="open-button" onclick="openFormkp()">BOOK SLOT</button>
+  </div>
+  </div>
+  <!--cards -->
+
+
+  <div class="card">
+
+  <div class="image">
+     <img src="https://i1.wp.com/rotarynewsonline.org/wp-content/uploads/2018/09/image3.jpg?ssl=1">
+  </div>
+  <div class="title">
+   <h1>
+  KATHAK</h1>
+  </div>
+  <div class="des">
+   <p>"The origin of Kathak is traditionally attributed to the traveling bards of ancient northern India known as Kathakars."</p>
+  <button class="open-button" onclick="openFormkk()">BOOK SLOT</button>
+  </div>
+  </div>
+  <!--cards -->
+
+
+  <div class="card">
+
+  <div class="image">
+     <img src="https://images.newindianexpress.com/uploads/user/imagelibrary/2018/8/12/w900X450/Odissi.jpg">
+  </div>
+  <div class="title">
+   <h1>
+  ODISSI</h1>
+  </div>
+  <div class="des">
+   <p>"Odissi is a major ancient Indian classical dance that originated in the Hindu temples of Odisha,an eastern coastal state of India."</p>
+  <button class="open-button" onclick="openFormo()">BOOK SLOT</button>
+  </div>
+  </div>
+  <!--cards -->
+
+</div>
+<div class="form-popup-bn" id="myForm-bn">
+  <form action="book.jsp" class="form-container">
+    <h1 align="center">BOOK SLOT</h1><br>
+
+    <label for="dance type" ><b>DanceType</b></label>
+    <input type="text"  name="dtype" value="BHAARATANATYAM"  readonly>
+
+    <label for="time"><b>Slot</b></label>
+    <select name="slot">
+      <option value="select">select</option>
+      <option value="6:00AM-8:00AM">6:00AM-8:00AM</option>
+      <option value="2:00PM-4:00PM">2:00PM-4:00PM</option>
+      <option value="6:00PM-8:00PM">6:00PM-8:00PM</option>
+	</select>
+	
+	<label for="Duration"><b>Duration</b></label>
+    <input type="text"  name="duration" value="1 Month" readonly>
+    
+    <label for="amt"><b>Total amount</b></label>
+    <input type="text"  name="amt" value="5000" readonly>
+    
+    <label for="payment"><b>Pay Through</b></label>
+    <select name="paytype">
+      <option value="select">select</option>
+      <option value="debit-card">Debit-card</option>
+      <option value="credit-card">Credit-card</option>
+      <option value="gpay">GooglePay</option>
+	</select>&nbsp;&nbsp;&nbsp;&nbsp;
+
+    <button type="submit" class="btn">Confirm</button>
+    <button type="button" class="btn cancel" onclick="closeFormbn()">Cancel</button>&nbsp;&nbsp;&nbsp;&nbsp;
+    <br><br>
+  </form>
+</div>
+
+<div class="form-popup-kp" id="myForm-kp">
+  <form action="book.jsp" class="form-container">
+    <h1 align="center">BOOK SLOT</h1><br>
+
+    <label for="dance type" ><b>DanceType</b></label>
+    <input type="text"  name="dtype" value="Kuchipudi"  readonly>
+
+    <label for="time"><b>Slot</b></label>
+    <select name="slot">
+      <option value="select">select</option>
+      <option value="6:00AM-8:00AM">6:00AM-8:00AM</option>
+      <option value="2:00PM-4:00PM">2:00PM-4:00PM</option>
+      <option value="6:00PM-8:00PM">6:00PM-8:00PM</option>
+	</select>
+	
+	<label for="Duration"><b>Duration</b></label>
+    <input type="text"  name="duration" value="1 Month" readonly>
+    
+    <label for="amt"><b>Total amount</b></label>
+    <input type="text"  name="amt" value="5000" readonly>
+    
+    <label for="payment"><b>Pay Through</b></label>
+    <select name="paytype">
+      <option value="select">select</option>
+      <option value="debit-card">Debit-card</option>
+      <option value="credit-card">Credit-card</option>
+      <option value="gpay">GooglePay</option>
+	</select>&nbsp;&nbsp;&nbsp;&nbsp;
+
+    <button type="submit" class="btn">Confirm</button>
+    <button type="button" class="btn cancel" onclick="closeFormkp()">Cancel</button>&nbsp;&nbsp;&nbsp;&nbsp;
+    <br><br>
+  </form>
+</div>
+<div class="form-popup-kk" id="myForm-kk">
+  <form action="book.jsp" class="form-container">
+    <h1 align="center">BOOK SLOT</h1><br>
+
+    <label for="dance type" ><b>DanceType</b></label>
+    <input type="text"  name="dtype" value="KATHAK"  readonly>
+
+    <label for="time"><b>Slot</b></label>
+    <select name="slot">
+      <option value="select">select</option>
+      <option value="6:00AM-8:00AM">6:00AM-8:00AM</option>
+      <option value="2:00PM-4:00PM">2:00PM-4:00PM</option>
+      <option value="6:00PM-8:00PM">6:00PM-8:00PM</option>
+	</select>
+	
+	<label for="Duration"><b>Duration</b></label>
+    <input type="text"  name="duration" value="1 Month" readonly>
+    
+    <label for="amt"><b>Total amount</b></label>
+    <input type="text"  name="amt" value="5000" readonly>
+    
+    <label for="payment"><b>Pay Through</b></label>
+    <select name="paytype">
+      <option value="select">select</option>
+      <option value="debit-card">Debit-card</option>
+      <option value="credit-card">Credit-card</option>
+      <option value="gpay">GooglePay</option>
+	</select>&nbsp;&nbsp;&nbsp;&nbsp;
+
+    <button type="submit" class="btn">Confirm</button>
+    <button type="button" class="btn cancel" onclick="closeFormkk()">Cancel</button>&nbsp;&nbsp;&nbsp;&nbsp;
+    <br><br>
+  </form>
+</div>
+<div class="form-popup-o" id="myForm-o">
+  <form action="book.jsp" class="form-container">
+    <h1 align="center">BOOK SLOT</h1><br>
+
+    <label for="dance type" ><b>DanceType</b></label>
+    <input type="text"  name="dtype" value="ODISSI"  readonly>
+
+    <label for="time"><b>Slot</b></label>
+    <select name="slot">
+      <option value="select">select</option>
+      <option value="6:00AM-8:00AM">6:00AM-8:00AM</option>
+      <option value="2:00PM-4:00PM">2:00PM-4:00PM</option>
+      <option value="6:00PM-8:00PM">6:00PM-8:00PM</option>
+	</select>
+	
+	<label for="Duration"><b>Duration</b></label>
+    <input type="text"  name="duration" value="1 Month" readonly>
+    
+    <label for="amt"><b>Total amount</b></label>
+    <input type="text"  name="amt" value="5000" readonly>
+    
+    <label for="payment"><b>Pay Through</b></label>
+    <select name="paytype">
+      <option value="select">select</option>
+      <option value="debit-card">Debit-card</option>
+      <option value="credit-card">Credit-card</option>
+      <option value="gpay">GooglePay</option>
+	</select>&nbsp;&nbsp;&nbsp;&nbsp;
+
+    <button type="submit" class="btn">Confirm</button>
+    <button type="button" class="btn cancel" onclick="closeFormo()">Cancel</button>&nbsp;&nbsp;&nbsp;&nbsp;
+    <br><br>
+  </form>
+</div>
+<script>
+function openFormbn() {
+	  document.getElementById("myForm-bn").style.display = "block";
+	}
+
+	function closeFormbn() {
+	  document.getElementById("myForm-bn").style.display = "none";
+	}
+function openFormkp() {
+  document.getElementById("myForm-kp").style.display = "block";
+}
+
+function closeFormkp() {
+  document.getElementById("myForm-kp").style.display = "none";
+}
+function openFormkk() {
+	  document.getElementById("myForm-kk").style.display = "block";
+	}
+
+function closeFormkk() {
+	  document.getElementById("myForm-kk").style.display = "none";
+	}
+function openFormo() {
+	  document.getElementById("myForm-o").style.display = "block";
+	}
+
+	function closeFormo() {
+	  document.getElementById("myForm-o").style.display = "none";
+	}
+</script>
+</body>
+</html>

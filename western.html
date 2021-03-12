@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Western</title>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Jost', sans-serif;
+
+
+
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Jost', sans-serif;
+
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card{
+     width: 20%;
+     display: inline-block;
+     box-shadow: 2px 2px 20px black;
+     border-radius: 5px;
+     margin: 2%;
+    }
+.card:hover{
+	border:5px solid black;
+}
+
+.image img{
+  width: 100%;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+
+
+
+ }
+
+.title{
+
+  text-align: center;
+  padding: 10px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Jost', sans-serif;
+
+
+ }
+
+h1{
+  font-size: 20px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Jost', sans-serif;
+  font-size: 20px;
+
+ }
+
+.des{
+  padding: 3px;
+  text-align: center;
+
+  padding-top: 10px;
+        border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+button{
+  margin-top: 40px;
+  margin-bottom: 10px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding:10px;
+}
+button:hover{
+  background-color: black;
+  color: white;
+  transition: .5s;
+  cursor: pointer;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: black;
+
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: black;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  overflow: hidden;
+  background:transparent;
+  position: fixed;
+   top: 0px;
+  align:left;
+ 
+}
+.nav{
+	overflow: hidden;
+    border: 1px solid black;
+    background-image: url(https://wallpapercave.com/wp/JvCoA3p.jpg);
+}
+
+
+.nav li {
+  float: left;
+    
+}
+
+.nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
+}
+
+.nav li a:hover:not(.active) {
+  background-color: #fff;
+  color:black;
+}
+
+.nav .active {
+  background-color: red;
+}
+.form-popup-bd{
+  display: none;
+  bottom: 0;
+  right: 15px;
+  z-index: 9;
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -730px; 
+  margin-top: -40px;
+}
+
+.form-popup-b {
+  display: none;
+  bottom: 0;
+  right: 15px;
+  z-index: 9;
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -390px; 
+  margin-top: -40px;
+}
+.form-popup-td{
+  display: none;
+  bottom: 0;
+  right: 15px;
+  z-index: 9;
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -30px; 
+  margin-top: -40px;
+}
+.form-popup-hd{
+  display: none;
+  bottom: 0;
+  right: 15px;
+  z-index: 9;
+  position:absolute;
+  top: 50%;
+  right: 50%;
+  margin-right:-700px; 
+  margin-top: -40px;
+}
+
+
+/* Add styles to the form container */
+
+
+.form-container {
+	margin-bottom: 10px;
+	padding-bottom: 20px;
+	align-items:center;
+	margin:5px;
+	width:350px;
+	border: 5px solid black;
+	border-radius:10px;
+	background-color:white;
+	box-shadow: 2px 2px 20px black;
+}
+
+.form-container label {
+	display: block;
+	margin-bottom: 5px;
+	margin-left:22px;
+	
+}
+
+
+.form-container input {
+	border: 2px solid black;
+	border-radius: 4px;
+	display: block;
+	font-family: inherit;
+	font-size: 14px;
+	padding: 10px;
+	width: 80%;
+	margin-left:22px;
+	
+	
+	
+}
+.form-container select{
+	border: 2px solid black;
+	border-radius: 4px;
+	display: block;
+	font-family: inherit;
+	font-size: 14px;
+	
+	width:80%;
+	height:40px;
+	margin-left:22px;
+	
+}
+.form-container .btn {
+  background-color: green;
+   
+	border: 2px solid green;
+	border-radius: 4px;
+	color: #fff;
+	display: inline-block;
+	font-family: inherit;
+	font-size: 16px;
+	padding: 10px;
+	margin-top: 20px;
+	width: 40%;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+	border: 2px solid red;
+	border-radius: 4px;
+	color: #fff;
+	display: inline-block;
+	font-family: inherit;
+	font-size: 16px;
+	padding: 10px;
+	margin-top: 20px;
+	width: 40%;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover {
+  opacity: 1;
+   
+}
+</style>
+</head>
+<body>
+	<div class="nav">
+		<ul>
+		  <li><a href="learner.html">HOME</a></li>
+		  <li><a href="western.html" class="active">WESTERN</a></li>
+		  <li><a href="classical.html">CLASSICAL</a></li>
+		  <li><a href="#">PROFILE</a></li>
+		  <li><a href="llogin.html">LOGOUT</a></li>
+		</ul>
+	</div>
+  <div class="about-section">
+  <h1>RYTHM DANCE STUDIO</h1>
+  <p>"Dance is the hidden language of the soul......"</p>
+  <p><marquee behavior="scroll" direction="right">You can Book Your Slot Right now!!...</marquee>
+ </p>
+</div>
+
+<h2 style="text-align:center">WESTERN DANCE</h2>
+
+  <div class="main">
+
+   <!--cards -->
+
+  <div class="card">
+
+  <div class="image">
+     <img src="https://img.redbull.com/images/c_crop,x_1,y_0,h_2133,w_3199/c_fill,w_1500,h_1000/q_auto,f_auto/redbullcom/2019/10/11/8e9ca35b-f25c-426a-bb40-338feabff9cb/world-urban-games-2019-shigekix-chairfreeze">
+  </div>
+  <div class="title">
+   <h1>
+  BREAK DANCE </h1>
+  </div>
+  <div class="des">
+   <p>"Breaking, also called breakdancing or b-boying/b-girling, is an athletic style of street dance from the United States" </p>
+  <button class="open-button" onclick="openFormbd()">BOOK SLOT</button>
+  </div>
+  </div>
+  <!--cards -->
+
+
+  <div class="card">
+
+  <div class="image">
+     <img src="https://www.pbt.org/wp-content/uploads/2016/10/Swan-Lake-870-opt.jpg">
+  </div>
+  <div class="title">
+   <h1>
+  BALLET</h1>
+  </div>
+  <div class="des">
+   <p>"Ballet is a type of performance dance that originated during the Italian Renaissance in the fifteenth century and later developed into a concert dance form"</p>
+  <button class="open-button" onclick="openFormb()">BOOK SLOT</button>
+  </div>
+  </div>
+  <!--cards -->
+
+
+  <div class="card">
+
+  <div class="image">
+     <img src="https://mediad.publicbroadcasting.net/p/wabe/files/styles/x_large/public/201709/TapDance_090617.jpg">
+  </div>
+  <div class="title">
+   <h1>
+  TAP DANCE</h1>
+  </div>
+  <div class="des">
+   <p>"Tap dance is a type of dance characterised by using the sounds of metal taps affixed to the heel and toe of shoes striking the floor."</p>
+  <button class="open-button" onclick="openFormtd()">BOOK SLOT</button>
+  </div>
+  </div>
+  <!--cards -->
+
+
+  <div class="card">
+
+  <div class="image">
+     <img src="https://publicrawartistsorg.s3.amazonaws.com/1460093002.492abffdda661b15d201f394bb172689.JPG">
+  </div>
+  <div class="title">
+   <h1>
+  Hip-Hop Dance</h1>
+  </div>
+  <div class="des">
+   <p>"Hip hop dance is a fusion dance genre that incorporates elements of popping, locking, jazz, ballet, and tap dancing."</p>
+  <button class="open-button" onclick="openFormhd()">BOOK SLOT</button>
+  </div>
+  </div>
+  <!--cards -->
+  <div class="form-popup-bd" id="myForm-bd">
+  <form action="book.jsp" class="form-container">
+    <h1 align="center">BOOK SLOT</h1><br>
+
+    <label for="dance type" ><b>DanceType</b></label>
+    <input type="text"  name="dtype" value="BREAK DANCE"  readonly>
+
+    <label for="time"><b>Slot</b></label>
+    <select name="slot">
+      <option value="select">select</option>
+      <option value="6:00AM-8:00AM">6:00AM-8:00AM</option>
+      <option value="2:00PM-4:00PM">2:00PM-4:00PM</option>
+      <option value="6:00PM-8:00PM">6:00PM-8:00PM</option>
+	</select>
+	
+	<label for="Duration"><b>Duration</b></label>
+    <input type="text"  name="duration" value="1 Month" readonly>
+    
+    <label for="amt"><b>Total amount</b></label>
+    <input type="text"  name="amt" value="5000" readonly>
+    
+    <label for="payment"><b>Pay Through</b></label>
+    <select name="paytype">
+      <option value="select">select</option>
+      <option value="debit-card">Debit-card</option>
+      <option value="credit-card">Credit-card</option>
+      <option value="gpay">GooglePay</option>
+	</select>&nbsp;&nbsp;&nbsp;&nbsp;
+
+    <button type="submit" class="btn">Confirm</button>
+    <button type="button" class="btn cancel" onclick="closeFormbd()">Cancel</button>&nbsp;&nbsp;&nbsp;&nbsp;
+    <br><br>
+  </form>
+</div>
+
+<div class="form-popup-b" id="myForm-b">
+  <form action="book.jsp" class="form-container">
+    <h1 align="center">BOOK SLOT</h1><br>
+
+    <label for="dance type" ><b>DanceType</b></label>
+    <input type="text"  name="dtype" value="BALLET"  readonly>
+
+    <label for="time"><b>Slot</b></label>
+    <select name="slot">
+      <option value="select">select</option>
+      <option value="6:00AM-8:00AM">6:00AM-8:00AM</option>
+      <option value="2:00PM-4:00PM">2:00PM-4:00PM</option>
+      <option value="6:00PM-8:00PM">6:00PM-8:00PM</option>
+	</select>
+	
+	<label for="Duration"><b>Duration</b></label>
+    <input type="text"  name="duration" value="1 Month" readonly>
+    
+    <label for="amt"><b>Total amount</b></label>
+    <input type="text"  name="amt" value="5000" readonly>
+    
+    <label for="payment"><b>Pay Through</b></label>
+    <select name="paytype">
+      <option value="select">select</option>
+      <option value="debit-card">Debit-card</option>
+      <option value="credit-card">Credit-card</option>
+      <option value="gpay">GooglePay</option>
+	</select>&nbsp;&nbsp;&nbsp;&nbsp;
+
+    <button type="submit" class="btn">Confirm</button>
+    <button type="button" class="btn cancel" onclick="closeFormb()">Cancel</button>&nbsp;&nbsp;&nbsp;&nbsp;
+    <br><br>
+  </form>
+</div>
+<div class="form-popup-td" id="myForm-td">
+  <form action="book.jsp" class="form-container">
+    <h1 align="center">BOOK SLOT</h1><br>
+
+    <label for="dance type" ><b>DanceType</b></label>
+    <input type="text"  name="dtype" value="TAP DANCE"  readonly>
+
+    <label for="time"><b>Slot</b></label>
+    <select name="slot">
+      <option value="select">select</option>
+      <option value="6:00AM-8:00AM">6:00AM-8:00AM</option>
+      <option value="2:00PM-4:00PM">2:00PM-4:00PM</option>
+      <option value="6:00PM-8:00PM">6:00PM-8:00PM</option>
+	</select>
+	
+	<label for="Duration"><b>Duration</b></label>
+    <input type="text"  name="duration" value="1 Month" readonly>
+    
+    <label for="amt"><b>Total amount</b></label>
+    <input type="text"  name="amt" value="5000" readonly>
+    
+    <label for="payment"><b>Pay Through</b></label>
+    <select name="paytype">
+      <option value="select">select</option>
+      <option value="debit-card">Debit-card</option>
+      <option value="credit-card">Credit-card</option>
+      <option value="gpay">GooglePay</option>
+	</select>&nbsp;&nbsp;&nbsp;&nbsp;
+
+    <button type="submit" class="btn">Confirm</button>
+    <button type="button" class="btn cancel" onclick="closeFormtd()">Cancel</button>&nbsp;&nbsp;&nbsp;&nbsp;
+    <br><br>
+  </form>
+</div>
+<div class="form-popup-hd" id="myForm-hd">
+  <form action="book.jsp" class="form-container">
+    <h1 align="center">BOOK SLOT</h1><br>
+
+    <label for="dance type" ><b>DanceType</b></label>
+    <input type="text"  name="dtype" value="Hip-Hop Dance"  readonly>
+
+    <label for="time"><b>Slot</b></label>
+    <select name="slot">
+      <option value="select">select</option>
+      <option value="6:00AM-8:00AM">6:00AM-8:00AM</option>
+      <option value="2:00PM-4:00PM">2:00PM-4:00PM</option>
+      <option value="6:00PM-8:00PM">6:00PM-8:00PM</option>
+	</select>
+	
+	<label for="Duration"><b>Duration</b></label>
+    <input type="text"  name="duration" value="1 Month" readonly>
+    
+    <label for="amt"><b>Total amount</b></label>
+    <input type="text"  name="amt" value="5000" readonly>
+    
+    <label for="payment"><b>Pay Through</b></label>
+    <select name="paytype">
+      <option value="select">select</option>
+      <option value="debit-card">Debit-card</option>
+      <option value="credit-card">Credit-card</option>
+      <option value="gpay">GooglePay</option>
+	</select>&nbsp;&nbsp;&nbsp;&nbsp;
+
+    <button type="submit" class="btn">Confirm</button>
+    <button type="button" class="btn cancel" onclick="closeFormhd()">Cancel</button>&nbsp;&nbsp;&nbsp;&nbsp;
+    <br><br>
+  </form>
+</div>
+<script>
+function openFormbd() {
+	  document.getElementById("myForm-bd").style.display = "block";
+	}
+
+	function closeFormbd() {
+	  document.getElementById("myForm-bd").style.display = "none";
+	}
+function openFormb() {
+  document.getElementById("myForm-b").style.display = "block";
+}
+
+function closeFormb() {
+  document.getElementById("myForm-b").style.display = "none";
+}
+function openFormtd() {
+	  document.getElementById("myForm-td").style.display = "block";
+	}
+
+function closeFormtd() {
+	  document.getElementById("myForm-td").style.display = "none";
+	}
+function openFormhd() {
+	  document.getElementById("myForm-hd").style.display = "block";
+	}
+
+	function closeFormhd() {
+	  document.getElementById("myForm-hd").style.display = "none";
+	}
+</script>
+</div>
+</body>
+</html>

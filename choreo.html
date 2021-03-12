@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>choreo</title>
+<style type="text/css">
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(https://wallpapercave.com/wp/JvCoA3p.jpg);
+	font-family: 'Open Sans', sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	margin: 0;
+}
+
+.nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  overflow: hidden;
+  background:transparent;
+  position: fixed;
+   top: 0px;
+  align:left;
+ 
+}
+.nav{
+	overflow: hidden;
+    border: 1px solid black;
+    background-image: url(https://wallpapercave.com/wp/JvCoA3p.jpg);
+}
+
+
+.nav li {
+  float: left;
+    
+}
+
+.nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
+}
+
+.nav li a:hover:not(.active) {
+  background-color: #fff;
+  color:black;
+}
+
+.nav .active {
+  background-color: red;
+}
+</style>
+</head>
+<body>
+	<div class="nav">
+		<ul>
+		  <li><a href="#" class="active">HOME</a></li>
+		  <li><a href="#"> MY SLOTS</a></li>
+		  <li><a href="#">PROFILE</a></li>
+		  <li><a href="#">BLOGS</a></li>
+		  <li><a href="login.html">LOGOUT</a></li>
+		</ul>
+	</div>
+</body>
+</html>

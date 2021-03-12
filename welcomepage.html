@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+          <html lang="en" dir="ltr">
+            <head>
+             <meta charset="ISO-8859-1">
+              <title></title>
+              <style type="text/css">
+              	.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    
+  }
+  .tabcontent {
+    animation: fadeEffect 1s; /* Fading effect takes 1 second */
+  }
+  
+  /* Go from zero to full opacity */
+  @keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+ 
+  .tab {
+    overflow: hidden;
+    border: 1px solid black;
+    background-image: url(https://wallpapercave.com/wp/JvCoA3p.jpg);
+  }
+  .tablinks{
+      color: whitesmoke;
+      font-size: large;
+  }
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 10px;
+    transition: 0.3s;
+  }
+  .tab button:hover {
+    background-color: wheat;
+    
+  }
+  .tab button.active {
+    background-color:red;
+  }
+  *{
+    margin: 0; padding: 0;box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Jost', sans-serif;
+  
+  }
+  body{
+    width: 100%; height:100vh;
+    background-image: linear-gradient(rgba(236, 227, 227, 0.3),rgba(240, 227, 227, 0.1)),url(https://wallpapercave.com/wp/JvCoA3p.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  }
+  main{
+    margin: auto;
+    padding-left: 500px;
+  }
+  h3{
+    padding-left: 8%;
+    color: whitesmoke;
+  }
+ 
+  @keyframes text{
+    0%{
+      color: whitesmoke;
+      margin-bottom: -40px;
+    }
+    30%{
+      letter-spacing: 5px;
+      margin-bottom: -40px;
+    }
+    85%{
+      letter-spacing: 3px;
+      margin-bottom: -40px;
+    }
+  }
+
+/*slideshow*/
+* {box-sizing: border-box;}
+
+.mySlides {display: none;}
+img {background-size: cover;}
+
+/* Slideshow container */
+.slideshow-container {
+  background-size: cover;
+  position: relative;
+  margin:0%;
+}
+
+/* Caption text */
+.text {
+  font-family: 'Fraunces', serif;
+  text-shadow: 10px 10px 10px whitesmoke;
+  color: #f2f2f2;
+  font-size: 70px;
+  padding-bottom: 400px;
+  padding-right: 400px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  animation: text 3s 1;
+}
+.text1{
+  font-family: 'Fraunces', serif;
+  text-shadow: 10px 10px 10px red;
+  color: rd;
+  font-size: 60px;
+  padding-bottom: 450px;
+  
+  animation: text 3s 1;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+
+
+
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+ 
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+
+
+
+
+
+
+
+  
+  
+              </style>
+              <link rel="preconnect" href="https://fonts.gstatic.com">
+              <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@1,500&display=swap" rel="stylesheet">
+            </head>
+            <body>
+                  <div class="tab">
+                     <button class="tablinks" onclick="openCity(event, 'home')" id="defaultOpen">HOME</button>
+                     <a href="login.html"><button class="tablinks" >CHOREO</button></a>
+                     <a href="llogin.html"><button class="tablinks" >LEARNER</button></a>
+                     <button class="tablinks" >ABOUT US</button>
+                 </div>
+                 
+                 
+                    <div id="home" class="tabcontent">
+                        <div class="slideshow-container">
+                            <div class="mySlides fade">
+                                <img src="https://wallpapercave.com/wp/wp7787147.jpg" style="width:100%">
+                                <div class="text">Welcome To Rhythm <br>Dance Studio</div>
+                              </div>
+                              <div class="mySlides fade">
+                                <img src="https://wallpapercave.com/wp/wp2565691.jpg" style="width:100%">
+                                <div class="text1">Set Absolute "Rhythm"To Your Dance</div>
+                              </div>
+                            <div class="mySlides fade">
+                              <img src="https://wallpapercave.com/wp/wp7797691.jpg" style="width:100%">
+                              <div class="text">Dance To The Beat Of Your Dreams</div>
+                            </div>
+                            <div class="mySlides fade">
+                                <img src="https://wallpapercave.com/wp/wp2235549.jpg" style="width:100%">
+                                <div class="text"></div>
+                              </div>
+                            
+                        </div>
+                            
+                    </div>
+                 
+          
+              
+              <div id="choreo" class="tabcontent">
+                
+              </div>
+            <div id="learner" class="tabcontent">
+                
+            </div>
+            <script>
+                 document.getElementById("defaultOpen").click();
+                        function openCity(evt, cont) {
+            // Declare all variables
+            var i, tabcontent, tablinks;
+
+            // Get all elements with class="tabcontent" and hide them
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            // Get all elements with class="tablinks" and remove the class "active"
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            // Show the current tab, and add an "active" class to the button that opened the tab
+            document.getElementById(cont).style.display = "block";
+            evt.currentTarget.className += " active";
+            }
+            
+    //slideshow
+    var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+ 
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+ 
+  slides[slideIndex-1].style.display = "block";  
+  
+  setTimeout(showSlides, 4000); // Change image every 2 seconds
+}
+              </script>
+            </body>
+          </html>
