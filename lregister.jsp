@@ -1,11 +1,14 @@
 <%@page import="java.sql.*" %>
 <%
-String name=request.getParameter("lname");
-String mail=request.getParameter("lmail");
-String pswd=request.getParameter("lpswd");
-String pswd2=request.getParameter("lpswd2");
+
+String lname=request.getParameter("lname");
+String lmail=request.getParameter("lmail");
+String lpswd=request.getParameter("lpswd");
+String lpswd2=request.getParameter("lpswd2");
+
 %>
 <%
+if(lpswd.equals(lpswd2)){
 try{
       Connection con=null;
       Class.forName("oracle.jdbc.driver.OracleDriver");
@@ -13,11 +16,12 @@ try{
       con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:XE","system","admin");
       System.out.println("connection");
       PreparedStatement psmt=con.prepareStatement("insert into learner values(?,?,?,?)");
-    psmt.setString(1,name);
-    psmt.setString(2,mail);
-    psmt.setString(3,pswd);
-    psmt.setString(4,pswd2);
-    int n=psmt.executeUpdate();
+      psmt.setString(1,lname);
+      psmt.setString(2,lmail);
+      psmt.setString(3,lpswd);
+      psmt.setString(4,lpswd2);
+      int n=psmt.executeUpdate();
+  
     if(n>0)
     {            
     
@@ -33,5 +37,10 @@ try{
 catch(Exception e)
 {
   out.println(e);
+}
+}
+else{
+	out.println("password not matching");
+	response.sendRedirect("lregister.html");
 }
     %>

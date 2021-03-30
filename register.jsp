@@ -39,5 +39,6 @@ catch(Exception e)
 }
 else{
 	out.println("password not matching");
+	response.sendRedirect("register.html");
 }
     %>

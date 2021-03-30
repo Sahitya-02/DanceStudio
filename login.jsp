@@ -21,12 +21,10 @@
     }
     if(f==0)
     {
-      %>
-      <h1 align='center'>Invalid credentials</h1>;
-      <%
+      out.println("Invalid Credentials");
       RequestDispatcher rd=request.getRequestDispatcher("login.html");
       rd.include(request, response);
-      
+      response.sendRedirect("register.html");
 
     }
   }
