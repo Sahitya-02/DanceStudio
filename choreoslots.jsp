@@ -116,36 +116,35 @@ h2{
 <div class="nav">
 		<ul>
 		  <li><a href="choreo.html">HOME</a></li>
-		  <li><a href="brequests.jsp" class="active">REQUESTS</a></li>
-		  <li><a href="choreoslots.jsp">MY SLOTS</a></li>
-		  
+		  <li><a href="brequests.jsp">REQUESTS</a></li>
+		  <li><a href="choreoslots.jsp"  class="active">MY SLOTS</a></li>
 		  <li><a href="login.html">LOGOUT</a></li>
 		</ul>
 	</div>
 	<table align="center" border=1 id="requests">
 	<tr>
-	<th>STUDENT EMAIL</th>
+	<th>LEARNER MAIL</th>
 	<th>DANCE TYPE</th>
 	<th>SLOT</th>
 	<th>DURATION</th>
-	<th>Accept/Ignore</th>
 	</tr>
 	<%
+	String cmail=(String)session.getAttribute("cmail");
 	Connection con=null;
     Class.forName("oracle.jdbc.driver.OracleDriver");
     System.out.println("Driver class loaded");
     con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","system","admin");
-    ResultSet rs=con.createStatement().executeQuery("select * from booking");
-    
+    PreparedStatement pstmt=con.prepareStatement("select * from confirmation where cmail=?");
+    pstmt.setString(1, cmail);
+    ResultSet rs=pstmt.executeQuery();
     
     while(rs.next()){
     %>
     <tr>
-    <td><%=rs.getString(1)%></td>
     <td><%=rs.getString(2)%></td>
     <td><%=rs.getString(3)%></td>
     <td><%=rs.getString(4)%></td>
-    <td><a href="daccepts.jsp?email=<%=rs.getString("email")%>"><input type="submit" id="submit" value="Accept"></a></td>
+    <td><%=rs.getString(5)%></td>
     </tr>
     <% 
     }

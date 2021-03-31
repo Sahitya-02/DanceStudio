@@ -119,6 +119,7 @@ h2{
 		  <li><a href="western.html">WESTERN</a></li>
 		  <li><a href="classical.html">CLASSICAL</a></li>
 		  <li><a href="bconfirm.jsp" class="active">MY SLOTS</a></li>
+		  <li><a href="tutorials.html">TUTORIALS</a></li>
 		  <li><a href="llogin.html">LOGOUT</a></li>
 		</ul>
 	</div>

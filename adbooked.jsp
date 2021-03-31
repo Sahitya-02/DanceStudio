@@ -130,6 +130,7 @@ h2{
 	<th>DANCE TYPE</th>
 	<th>SLOT</th>
 	<th>DURATION</th>
+	<th></th>
 	</tr>
 	<%
 	Connection con=null;
@@ -147,7 +148,7 @@ h2{
     <td><%=rs.getString(3)%></td>
     <td><%=rs.getString(4)%></td>
     <td><%=rs.getString(5)%></td>
-   
+    <td><a href="del_slots.jsp?cmail=<%=rs.getString("cmail")%>&lmail=<%=rs.getString("lmail")%>"><input type="submit" id="submit" value="Delete Slot"></a></td>
     </tr>
     <% 
     }

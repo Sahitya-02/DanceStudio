@@ -25,7 +25,7 @@
     if(n>0)
     {            
     
-      response.sendRedirect("payment.html");
+      response.sendRedirect("payment.jsp");
     }
     else
     {

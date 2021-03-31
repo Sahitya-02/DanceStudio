@@ -144,7 +144,6 @@ h2{
     <td><%=rs.getString(2)%></td>
     <td><%=rs.getString(3)%></td>
     <td><%=rs.getString(4)%></td>
-   
     </tr>
     <% 
     }
