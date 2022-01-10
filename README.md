@@ -20,3 +20,7 @@ Selection:-He can select one of the 2 main categories i.e., classical or western
 Booking:-He can book his desired slot and duration after selecting the dance type.
 Payment:-He can pay online after the completion of slot-booking.
 He gets the details of the choreographer after the requests are accepted.
+
+
+More details:
+https://www.canva.com/design/DAEZN5wQVuM/7gbhMC3SdlJRtj_LfbbfEw/view?utm_content=DAEZN5wQVuM&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton
